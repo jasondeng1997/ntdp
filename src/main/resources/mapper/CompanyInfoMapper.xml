@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiangkai.cfms.dao.CompanyInfoMapper">
+  <resultMap id="BaseResultMap" type="com.xiangkai.cfms.entity.CompanyInfo">
+    <result column="company_code" jdbcType="VARCHAR" property="companyCode" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="normal_park" jdbcType="INTEGER" property="normalPark" />
+    <result column="chem_park" jdbcType="INTEGER" property="chemPark" />
+    <result column="employee_num" jdbcType="INTEGER" property="employeeNum" />
+    <result column="employee_pass_num" jdbcType="INTEGER" property="employeePassNum" />
+    <result column="vehicle_num" jdbcType="INTEGER" property="vehicleNum" />
+    <result column="vehicle_pass_num" jdbcType="INTEGER" property="vehiclePassNum" />
+    <result column="valid" jdbcType="INTEGER" property="valid" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    company_code, company_name, address, normal_park, chem_park, employee_num, employee_pass_num, vehicle_num, vehicle_pass_num, valid, create_time, update_time
+  </sql>
+
+  <!-- 自定义方法 -->
+  <select id="selectCompanyInfo"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_company_info
+    where valid = 1
+  </select>
+</mapper>

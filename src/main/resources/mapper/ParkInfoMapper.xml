@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiangkai.cfms.dao.ParkInfoMapper">
+  <resultMap id="BaseResultMap" type="com.xiangkai.cfms.entity.EntranceRegion">
+    <result column="area" jdbcType="INTEGER" property="regionName" />
+    <result column="perimeter" jdbcType="INTEGER" property="entranceNum" />
+    <result column="company_num" jdbcType="INTEGER" property="companyNum" />
+    <result column="contractor_num" jdbcType="VARCHAR" property="regionName" />
+    <result column="employee_num" jdbcType="INTEGER" property="entranceNum" />
+    <result column="vehicle_num" jdbcType="INTEGER" property="companyNum" />
+    <result column="dangerous_num" jdbcType="INTEGER" property="entranceNum" />
+    <result column="chemical_num" jdbcType="INTEGER" property="companyNum" />
+    <result column="technology_num" jdbcType="INTEGER" property="companyNum" />
+    <result column="valid" jdbcType="INTEGER" property="valid" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    area, perimeter, company_num, contractor_num,employee_num,vehicle_num,dangerous_num,chemical_num,technology_num, valid, create_time
+  </sql>
+
+  <select id="selectParkInfo"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_park_info
+    where valid = 1
+  </select>
+</mapper>

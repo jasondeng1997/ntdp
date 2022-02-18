@@ -1,0 +1,66 @@
+server:
+  port: 8820
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #for Mysql db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://124.70.142.10:3306/Largescreen?characterEncoding=UTF-8&serverTimezone=GMT%2B8&useSSL=false&useUnicode=true
+
+    validationQuery: SELECT 1
+
+    #for Oracle db
+    #driver-class-name: oracle.jdbc.driver.OracleDriver
+    #url: jdbc:oracle:thin:@10.1.92.23:1521/TPL2A
+    #validationQuery: SELECT 1 FROM DUAL
+
+    username: root
+    password: password
+    initialSize: 20
+    minIdle: 5
+    maxActive: 100
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    filters: stat,wall,log4j
+    logSlowSql: true
+    keepAlive: true
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+
+#for mybatis
+mybatis:
+  config-locations: classpath:mybatis-config.xml
+  mapper-locations: classpath*:/mapper/*.xml
+
+#print sql
+logging:
+  level:
+    com:
+      xiangkai:
+        cfms:
+          dao: DEBUG
+
+token:
+  expire:
+    seconds: 7200
+  jwtSecret: DYk5ZjZiY7P0NjIxZDM3M2NhZGU0ZTgzMjYyN4O0YjX=
+
+upload:
+  #root-path: C:\upload
+  #root-path: /data/xiangkai/cfms/upload
+  root-path: /Users/xukaiqin/Documents/J2EE/data/xiangkai/cfms/upload
+  #读取图片时的地址
+  image-address: http://localhost:8820/cfms/upload/fetch/
+
+#刷脸重复时间间隔（分钟）
+carFace:
+  intervalMinute: 180

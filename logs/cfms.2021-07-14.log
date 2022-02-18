@@ -1,0 +1,76 @@
+2021-07-14 20:24:22.604  INFO 5381 --- [main] com.xiangkai.cfms.StartupApplication     : Starting StartupApplication on AlvinLei.local with PID 5381 (/Users/Alvin/JavaEE/cfms/target/classes started by Alvin in /Users/Alvin/JavaEE/cfms)
+2021-07-14 20:24:22.611  INFO 5381 --- [main] com.xiangkai.cfms.StartupApplication     : The following profiles are active: dev
+2021-07-14 20:24:26.471  INFO 5381 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-14 20:24:26.482  INFO 5381 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-14 20:24:26.584  INFO 5381 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
+2021-07-14 20:24:27.690  INFO 5381 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$e175c711] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-14 20:24:27.706  INFO 5381 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$48c7fed7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-14 20:24:27.775  INFO 5381 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-14 20:24:27.780  INFO 5381 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2d9f64c9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-14 20:24:27.786  INFO 5381 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$64a69c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-14 20:24:27.799  INFO 5381 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-14 20:24:29.191  INFO 5381 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8820 (http)
+2021-07-14 20:24:29.254  INFO 5381 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8820"]
+2021-07-14 20:24:29.286  INFO 5381 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-14 20:24:29.286  INFO 5381 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2021-07-14 20:24:29.329  INFO 5381 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/Alvin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2021-07-14 20:24:29.667  INFO 5381 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/cfms]   : Initializing Spring embedded WebApplicationContext
+2021-07-14 20:24:29.668  INFO 5381 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6567 ms
+2021-07-14 20:24:34.735  INFO 5381 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-14 20:24:37.004  INFO 5381 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9be7319, org.springframework.security.web.context.SecurityContextPersistenceFilter@8077c97, org.springframework.security.web.header.HeaderWriterFilter@25214797, org.springframework.web.filter.CorsFilter@91a2543, org.springframework.security.web.authentication.logout.LogoutFilter@6e8f2094, com.xiangkai.cfms.filter.TokenFilter@1b5a1d85, com.xiangkai.cfms.filter.CustomAuthenticationFilter@73971965, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7404ddca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@563317c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a0896b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42730828, org.springframework.security.web.session.SessionManagementFilter@60928a61, org.springframework.security.web.access.ExceptionTranslationFilter@6009cd34, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40dd552c]
+2021-07-14 20:24:37.186  INFO 5381 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-07-14 20:24:37.301  INFO 5381 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-07-14 20:24:37.325  INFO 5381 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-07-14 20:24:37.725  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: infoUsingGET_1
+2021-07-14 20:24:37.742  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2021-07-14 20:24:37.763  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2021-07-14 20:24:37.772  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingPOST_1
+2021-07-14 20:24:37.781  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: infoUsingGET_2
+2021-07-14 20:24:37.804  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_2
+2021-07-14 20:24:37.815  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2021-07-14 20:24:37.826  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_2
+2021-07-14 20:24:37.834  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingPOST_2
+2021-07-14 20:24:37.841  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: infoUsingGET_3
+2021-07-14 20:24:37.863  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_3
+2021-07-14 20:24:37.871  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2021-07-14 20:24:37.888  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_3
+2021-07-14 20:24:37.897  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingPOST_3
+2021-07-14 20:24:37.904  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: infoUsingGET_4
+2021-07-14 20:24:37.917  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_4
+2021-07-14 20:24:37.923  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_3
+2021-07-14 20:24:37.940  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_4
+2021-07-14 20:24:37.950  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingPOST_4
+2021-07-14 20:24:37.957  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: infoUsingGET_5
+2021-07-14 20:24:37.983  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_5
+2021-07-14 20:24:37.991  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_4
+2021-07-14 20:24:38.008  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_5
+2021-07-14 20:24:38.019  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingPOST_5
+2021-07-14 20:24:38.026  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: infoUsingGET_6
+2021-07-14 20:24:38.031  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_6
+2021-07-14 20:24:38.043  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_5
+2021-07-14 20:24:38.062  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_6
+2021-07-14 20:24:38.068  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingPOST_6
+2021-07-14 20:24:38.075  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: infoUsingGET_7
+2021-07-14 20:24:38.088  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_7
+2021-07-14 20:24:38.100  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_6
+2021-07-14 20:24:38.118  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_7
+2021-07-14 20:24:38.124  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingPOST_7
+2021-07-14 20:24:38.129  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: infoUsingGET_8
+2021-07-14 20:24:38.134  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_8
+2021-07-14 20:24:38.142  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: parentsUsingGET_1
+2021-07-14 20:24:38.154  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_7
+2021-07-14 20:24:38.167  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_8
+2021-07-14 20:24:38.176  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingPOST_8
+2021-07-14 20:24:38.182  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: infoUsingGET_9
+2021-07-14 20:24:38.197  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_9
+2021-07-14 20:24:38.206  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_8
+2021-07-14 20:24:38.228  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingPOST_9
+2021-07-14 20:24:38.290  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_9
+2021-07-14 20:24:38.302  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: infoUsingGET_10
+2021-07-14 20:24:38.307  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: infoUsingGET_11
+2021-07-14 20:24:38.315  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_10
+2021-07-14 20:24:38.319  INFO 5381 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_9
+2021-07-14 20:24:38.383  INFO 5381 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8820"]
+2021-07-14 20:24:38.497  INFO 5381 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8820 (http) with context path '/cfms'
+2021-07-14 20:24:38.501  INFO 5381 --- [main] com.xiangkai.cfms.StartupApplication     : Started StartupApplication in 18.449 seconds (JVM running for 20.61)
+2021-07-14 20:24:49.914  INFO 5381 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
